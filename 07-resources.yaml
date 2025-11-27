@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: inginx
+    image: nginx
     resources:
       requests:
         memory: "68Mi"
