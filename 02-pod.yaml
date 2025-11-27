@@ -2,9 +2,10 @@ apiVersion: v1
 kind: Pod 
 metadata: 
   name: nginx
+  namespace: safety
   labels: 
     name: nginx
-    project: roboshop
+    project: safety
 spec:
   containers:
   - name: nginx
