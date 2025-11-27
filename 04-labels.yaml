@@ -8,5 +8,5 @@ metadata:
     environment: dev
     version: v1
 spec:
-- name: frontend
-  image: nginx
+  - name: frontend
+    image: nginx
