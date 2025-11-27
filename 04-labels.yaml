@@ -8,6 +8,6 @@ metadata:
     environment: dev
     version: v1
 spec:
-containers:
+  containers:
   - name: frontend
     image: nginx
