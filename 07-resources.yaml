@@ -1,8 +1,7 @@
-apiVersion:
+apiVersion: v1
 kind: Pod
 metadata: 
   name: resource-test
-
 spec:
   containers:
   - name: nginx
