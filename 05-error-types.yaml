@@ -9,5 +9,7 @@ metadata:
     version: v1
 spec:
   containers:
-  - name: nginx
-    image: nginxgg
+  # - name: nginx
+  #   image: nginxgg
+  - name: almalinux
+    image: almalinux:9
