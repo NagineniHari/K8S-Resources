@@ -5,8 +5,8 @@ metadata:
  labels:
   project: safety
 spec:
-containers:
-  - name: nginx
-    image: nginx
-    ports:
-    - containerPort: 80
+ containers:
+ - name: nginx
+   image: nginx
+   ports:
+   - containerPort: 80
