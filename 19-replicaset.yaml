@@ -7,7 +7,7 @@ metadata:
     purpose: rs-demo
     project: safety
 spec:
-  replicas: 2
+  replicas: 6
   selector:
     # these labels are used to select pods
     matchLabels:
