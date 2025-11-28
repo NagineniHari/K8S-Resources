@@ -1,0 +1,25 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: nginx
+# these are replica set labels
+  labels:
+    purpose: dp-demo
+    project: safety
+spec:
+  replicas: 6
+  selector:
+    # these labels are used to select pods
+    matchLabels:
+      purpose: dp-demo
+      project: safety
+    # pod definition
+  template: 
+    metadata:
+      labels:
+        purpose: dp-demo
+        project: safety
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:trixie-perl
