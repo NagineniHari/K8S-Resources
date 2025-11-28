@@ -1,4 +1,4 @@
-apiVersion: v1 
+apiVersion: v1
 kind: ConfigMap
 matadeta: 
   name: pod-config
@@ -6,4 +6,3 @@ data:
   course: "DevSecOps with AWS"
   duration: "120hrs"
   trainer: "naginenihari"
-  
