@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: nginx
 # these are replica set labels
-  lebels:
+  labels:
     purpose: rs-demo
     project: safety
 spec:
