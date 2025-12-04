@@ -1,0 +1,16 @@
+## Creating a PV is K8S Admin Job or Task
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ebs-static
+spec:
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain  ##Retain means don't delete the data , detete means delete data and disk recycle means delete data but don't delete disk
+  capacity:
+    storage: 16Gi
+  csi:
+    driver: ebs.csi.aws.com
+    fsType: ext4
+    volumeHandle: vol-076da17a047e7b3cb
+  
