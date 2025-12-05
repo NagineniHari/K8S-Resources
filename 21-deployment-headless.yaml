@@ -36,3 +36,19 @@ spec:
     - protocol: TCP
       port: 80 ## services port
       targetPort: 80 ## container port
+
+---
+apiVersion: v1 
+kind: Service
+metadata: 
+  name: nginx-headless
+spec:
+  ## If Service don't have clusterIP or if a service ClusterIP is none then it is called as headless service
+  ClusterIP: none
+  selector:
+        purpose: headless-svc-demo
+        project: safety
+  ports:
+    - protocol: TCP
+      port: 80 ## services port
+      targetPort: 80 ## container port
