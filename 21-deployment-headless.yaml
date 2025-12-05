@@ -44,7 +44,7 @@ metadata:
   name: nginx-headless
 spec:
   ## If Service don't have clusterIP or if a service ClusterIP is none then it is called as headless service
-  ClusterIP: none
+  clusterIP: none
   selector:
         purpose: headless-svc-demo
         project: safety
